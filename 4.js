@@ -1,6 +1,6 @@
 const { readFileSync } = require('fs')
 
-const txt = readFileSync('./4-input.txt', {encoding: 'utf-8'})
+const txt = readFileSync('./4-input.txt', {encoding: 'utf-8'}).slice(0, -1)
 const lines = txt.split('\n')
 const cardsInPossession = {}
 let pointsSum = 0

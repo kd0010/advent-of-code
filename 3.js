@@ -1,6 +1,6 @@
 const { readFileSync } = require('fs')
 
-const txt = readFileSync('./3-input.txt', {encoding: 'utf-8'})
+const txt = readFileSync('./3-input.txt', {encoding: 'utf-8'}).slice(0, -1)
 const lines = txt.split('\n')
 const symbolRegex = /[\-\&\/\*\@\#\%\+\$\=]{1}/
 const digitRegex = /\d/

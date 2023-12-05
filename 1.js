@@ -1,6 +1,6 @@
 const { readFileSync } = require('fs')
 
-const txt = readFileSync('./1-input.txt', {encoding: 'utf-8'})
+const txt = readFileSync('./1-input.txt', {encoding: 'utf-8'}).slice(0, -1)
 const lines = txt.split('\n')
 const digitRegex = new RegExp(/\d/)
 const digitWordRegex = new RegExp(/(one|two|three|four|five|six|seven|eight|nine)/)
